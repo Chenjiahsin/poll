@@ -14,7 +14,7 @@
     <ul>
         {% for option in option_list %}
         <li>
-            {{ option.title }} : {{ option.count }} 票
+            <a href="/option/{{option.id}}/">{{ option.title }}</a> : {{ option.count }} 票
         </li>
         {% endfor %}
     </ul>
